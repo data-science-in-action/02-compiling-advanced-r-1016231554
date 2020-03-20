@@ -1,0 +1,82 @@
+---
+title: "Advanced R Programming"
+author: "Sining Su"
+date: "2020/3/20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Error in loadNamespace(name) : there is no package called ‘bookdown’
+install.packages("bookdown")
+
+Error in loadNamespace(name) : there is no package called 'desc'
+Error in loadNamespace(name) : there is no package called 'sessioninfo'
+Error in library(lobstr) : there is no package called 'lobstr'
+install.packages("desc")
+install.packages("sessioninfo")
+install.packages("lobstr")
+
+Quitting from lines 223-235 (Introduction.Rmd) 
+Error in cat(paste0(contributors$desc, collapse = ", ")) : 
+  invalid multibyte string at '<86>,<4e>A (\@kfeng123), Karl Forner (\@kforner), Kirill Sevastyanenko (\@kirillseva), Brian Knaus (\@knausb), Kirill M眉ller (\@krlmlr), Kriti Sen Sharma (\@ksens), Kai Tang (鍞愭伜锛<89>,NA (\@ktang), Kevin Wright (\@kwstat), suo.lawrence.liu@gmail.com (\@Lawrence-Liu), \@ldfmrails, Kevin Kainan Li (\@legendre6891), Rachel Severson (\@leighseverson), Laurent Gatto (\@lgatto), C. Jason Liang (\@liangcj), Steve Lianoglou (\@lianos), Yongfu Liao (\@liao961120), Likan (\@likanzhan), \@lindbrook, Lingbing Feng (\@Lingbing), Marcel Ramos (\@LiNk-NY), Zhongpeng Lin (\@linzhp), Lionel Henry (\@lionel-), Llu铆s (\@llrs), myq (\@lrcg), Luke W Johnston (\@lwjohnst86), Kevin Lynagh (\@lynaghk), \@MajoroMask, Malcolm Barrett (\@malcolmbarrett), \@mannyishere, \@mascaretti, Matt (\@mattbaggott), Matthew Grogan (\@mattgrogan), \@matthewhillary, Matthieu Gomez (\@matthieugomez), Matt Malin (\@mattmalin), Mauro Lepore (\@maurolepore), Max Ghenis (\@MaxGhenis), M
+Calls: local ... withCallingHandlers -> withVisible -> eval -> eval -> cat
+contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
+
+Quitting from lines 788-794 (Conditions.Rmd) 
+Error in library(testthat) : there is no package called 'testthat'
+install.packages("testthat")
+
+devtools::install_github("hadley/emo")# this needs package "devtools"
+Quitting from lines 726-734 (Functionals.Rmd) 
+Error in loadNamespace(name) : there is no package called 'tibble'
+install.packages("tibble")
+
+Quitting from lines 5-7 (OO.Rmd) 
+Error in library(sloop) : there is no package called 'sloop'
+install.packages("sloop")
+
+Quitting from lines 209-221 (Big-picture.Rmd) 
+Error: The dbplyr package is required to communicate with database backends.
+Execution halted
+Error in Rscript_render(f, render_args, render_meta) : 
+  Failed to compile Big-picture.Rmd
+Calls: <Anonymous> ... render_book -> render_new_session -> Rscript_render
+Execution halted
+
+Exited with status 1.
+install.packages("dbplyr")
+
+Quitting from lines 38-40 (Perf-measure.Rmd) 
+Error in library(profvis) : there is no package called 'profvis'
+install.packages("profvis")
+
+Quitting from lines 38-40 (Perf-measure.Rmd) 
+Error in library(bench) : there is no package called 'bench'
+install.packages("bench")
+
+Quitting from lines 233-234 (Perf-measure.Rmd) 
+Error in loadNamespace(name) : there is no package called 'ggbeeswarm'
+install.packages("ggbeeswarm")
